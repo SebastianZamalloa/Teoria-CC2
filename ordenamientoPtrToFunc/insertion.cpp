@@ -1,16 +1,6 @@
 #include<iostream>
 using namespace std; 
-template<typename T>
-class prueba
-{
-    protected:
-        T dato;
-    public:
-        prueba(){}
-        prueba(T aux):dato(aux){}
-        T getDato(){return dato;}
-        void setDato(T aux){dato = aux;}
-};
+
 template<typename T>
 void crearLista(T* &arreglo,int &n)
 {
