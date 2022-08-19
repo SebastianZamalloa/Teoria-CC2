@@ -19,8 +19,8 @@ int main()
     auto hermanaGemelaDeMaria = maria; 
     describe_person(maria.get());
     describe_person(hermanaGemelaDeMaria.get());
-    (*hermanaGemelaDeMaria)(5);
+    (*hermanaGemelaDeMaria)(5); //Pasan 5 años y la hermana gemela de Maria va a seguir teniendo su misma edad
     describe_person(maria.get());
-    describe_person(hermanaGemelaDeMaria.get());
+    describe_person(hermanaGemelaDeMaria.get()); //Los shared_ptr permiten que compartan edad y nombre en cualquier sentido
     cout<<endl;
 }
